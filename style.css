@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: hsl(167, 45%, 44%); /* hsl(223, 87%, 63%);*/
+    --pale-blue: hsl(223, 100%, 88%); /* hsl(223, 100%, 88%);*/
+    --light-red: hsl(354, 100%, 66%); /* hsl(354, 100%, 66%); */
+    --gray: white; /* hsl(0, 0%, 59%);*/
+    --very-dark-blue: white; /* hsl(209, 33%, 12%);*/
+    background-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300, 600, 700;
+}
+
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+attribution {
+    color: white;
+}
+
+header {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+
+}
+
+.container h1 {
+    font-weight: 100;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: var(--gray);
+}
+
+.container h1 span {
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.container p {
+    color: var(--very-dark-blue);
+    margin-bottom: 40px;
+    font-weight: 100;
+    font-size: smaller;
+}
+
+.container input {
+    border: 1px solid var(--pale-blue);
+    border-radius: 50px;
+    padding: 10px 20px;
+    max-width: 500px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+.container button {
+    background-color: var(--primary-color);
+    color: black;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    max-width: 500px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.container button:hover {
+    opacity: 0.8;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+footer>ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+footer>ul li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--pale-blue);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+footer>ul li:hover {
+    background-color: var(--primary-color); /*var(--primary-color);*/
+}
+
+footer>ul li:hover i {
+    color: black;
+}
+
+footer>ul li i {
+    color: var(--primary-color);
+}
