@@ -75,28 +75,31 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, .08)
 }
 
-.brand {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 800;
-    font-size: 20px;
-    letter-spacing: -.8px
-}
-
-.brand-mark {
-    display: inline-grid;
-    place-items: center;
-    width: 29px;
-    height: 29px;
-    border: 1px solid rgba(255, 255, 255, .25);
-    margin-right: 2px;
-    font: 500 11px "DM Mono", monospace
-}
-
-.brand i {
-    font-style: normal;
-    color: #7b8cff
-}
+.brand{
+    display:inline-flex;
+    align-items:baseline;
+    color:#f3f5f7;
+    text-decoration:none;
+    font-size:20px;
+    line-height:1;
+    letter-spacing:-.055em;
+  }
+  
+  .brand-ext{
+    font-weight:500;
+  }
+  
+  .brand-devs{
+    font-weight:800;
+    color:#ffffff;
+  }
+  
+  .brand i{
+    font-style:normal;
+    color:#7180f2;
+    font-weight:800;
+    margin-left:2px;
+  }  
 
 .status,
 .eyebrow,
