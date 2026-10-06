@@ -1,93 +1,107 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <title>ExtDevs</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-   <!--  -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-      color: white;
-    }
-
-    .attribution a {
-      color: hsl(167, 45%, 44%); /* hsl(228, 45%, 44%);*/
-    }
-  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ExtDevs — infrastructure for AI-agent capabilities. Something useful is being built.">
+  <meta name="theme-color" content="#07090d">
+  <title>ExtDevs — Something useful is being built</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <header>
-    <img src="images/extDevsLogo.svg" alt="logo">
+  <div class="noise"></div>
+  <div class="grid"></div>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+
+  <header class="nav">
+    <a class="brand" href="#" aria-label="ExtDevs home">
+      <span class="brand-mark">EX</span><span>tdevs</span><i>.</i><span>com</span>
+    </a>
+    <div class="status"><span class="pulse"></span> BUILDING · 2026</div>
   </header>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+
   <main>
-    <div class="container">
-      <h1>We are launching <span>soon!</span></h1>
-      <p>Subscribe and get notified</p>
-      <input type="email" id="emailInput" placeholder="Your email address"><span><button id="submitButton">Notify Me</button></span>
-      
-      <p id="errorMessage" style="color: red; display: none; font-size: 0.6rem; font-style: italic; margin-right: 250px; margin-top: -10px;" >Please provide a valid email address</p>
-    </div>
-
-    <!--
-    <div class="container"></div>
-      <h1>We are launching <span>soon!</span></h1>
-        <p>Subscribe and get notified</p>
-        <form id="email-form" action="your-form-processing-script.php" method="post">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <button type="submit">Notify Me</button>
-        </form>
-    </div>
-    -->
-
-
-    <div class="image">
-      <!--img src="images/illustration-dashboard.png" alt=""-->
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    </div>
-
-    <footer>
-      
-      <ul>
-        <li><i class="fa-brands fa-facebook-f"></i></li>
-        <li><i class="fa-brands fa-x-twitter"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-tiktok"></i></li>
-      </ul>
-
-      <p class="attribution">
-        <!--Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. -->
-        Coded by <a href="https://at.linkedin.com/in/kornelladila">Kornel Ladila</a>.
+    <section class="hero">
+      <div class="eyebrow"><span></span> THE NEXT LAYER OF SOFTWARE</div>
+      <h1>Extend what<br><em>AI can do.</em></h1>
+      <p class="lead">
+        We’re building infrastructure that helps AI agents discover, connect to,
+        and safely use the capabilities they need.
       </p>
-    </footer>
+
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <label>extdevs / bootstrap</label>
+        </div>
+        <div class="terminal-body">
+          <div><b>$</b> extdevs status</div>
+          <div class="muted">initializing capability layer...</div>
+          <div class="row"><span>agent discovery</span><strong>READY</strong></div>
+          <div class="row"><span>tool registry</span><strong>BUILDING</strong></div>
+          <div class="row"><span>trust &amp; execution</span><strong>BUILDING</strong></div>
+          <div><span class="cursor"></span></div>
+        </div>
+      </div>
+
+      <form class="signup" id="signup">
+        <div class="input-wrap">
+          <span>→</span>
+          <input id="email" type="email" autocomplete="email" placeholder="your@email.com" aria-label="Email address" required>
+        </div>
+        <button type="submit">GET EARLY ACCESS <span>↗</span></button>
+      </form>
+      <p class="form-note" id="form-note">No spam. Just a signal when we’re ready.</p>
+    </section>
+
+    <section class="statement">
+      <div class="section-label">01 / WHAT'S COMING</div>
+      <div class="statement-copy">
+        <h2>Software is becoming<br><span>agent-readable.</span></h2>
+        <p>
+          ExtDevs is exploring a new layer between AI agents and the software
+          they need to get work done — discoverable, composable and trustworthy.
+        </p>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article>
+        <div class="card-num">01</div>
+        <div class="icon">⌁</div>
+        <h3>Discover</h3>
+        <p>Find the right capability for the job, without hunting through documentation.</p>
+      </article>
+      <article>
+        <div class="card-num">02</div>
+        <div class="icon">↯</div>
+        <h3>Connect</h3>
+        <p>Give agents clean, composable access to APIs, tools and services.</p>
+      </article>
+      <article>
+        <div class="card-num">03</div>
+        <div class="icon">◈</div>
+        <h3>Trust</h3>
+        <p>Understand reliability, permissions, security and real-world execution.</p>
+      </article>
+    </section>
+
+    <section class="manifesto">
+      <div class="manifesto-line"></div>
+      <p>BUILT FOR THE NEXT GENERATION OF DEVELOPERS<br><strong>AND THE AGENTS THAT WORK WITH THEM.</strong></p>
+      <div class="manifesto-line"></div>
+    </section>
   </main>
+
+  <footer>
+    <span>© 2026 EXTDEVS</span>
+    <span>EXTEND WHAT SOFTWARE CAN DO.</span>
+  </footer>
 
   <script src="script.js"></script>
 </body>
-
 </html>
